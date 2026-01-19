@@ -1,0 +1,75 @@
+
+html
+  color-scheme: light dark
+  font-family: system-ui
+  display: flex
+  align-items: center
+  justify-content: center
+
+body
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+section
+  margin: 2rem 0
+
+@mixin button($button)
+  width: 100%
+  margin-top: .75rem
+  font-size: 1rem
+  padding: .5rem
+  border: none
+  cursor: pointer
+  background-color: $button
+  color: #fff
+
+#app
+  width: 75vw
+
+h1
+  text-align: center
+
+form section
+  display: flex
+  flex-direction: column
+  fieldset
+    display: flex
+    flex-wrap: wrap
+    padding: 1.5rem
+    background-color: #fff
+    label
+      margin: 0.75rem 0
+      width: 30%
+    select,input:not([type="checkbox"])
+      height: 2rem
+      font-size: 1rem
+      padding-left: 0.5rem
+      box-sizing: border-box
+      border: 1px solid #ccc
+      background-color: #fff
+      width: 70%
+    textarea
+      height: 5rem
+      font-size: 1rem
+      padding-left: 0.5rem
+      box-sizing: border-box
+      appearance: none
+      border: 1px solid #ccc
+      background-color: #fff
+      width: 70%
+      margin-bottom: .75rem
+      resize: none
+
+.removeBtn
+  @include button($button:#a30909)
+.addBtn
+  @include button($button:#008c7d)
+.saveBtn
+  @include button($button:#218c00)
+.editBtn
+  @include button($button:#008c7d)
+
+.educational_experience,
+.job_experience
+  margin-bottom: 1rem

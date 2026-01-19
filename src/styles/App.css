@@ -1,0 +1,112 @@
+html {
+  color-scheme: light dark;
+  font-family: system-ui;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  margin: 2rem 0;
+}
+
+#app {
+  width: 75vw;
+}
+
+h1 {
+  text-align: center;
+}
+
+form section {
+  display: flex;
+  flex-direction: column;
+}
+form section fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1.5rem;
+  background-color: #fff;
+}
+form section fieldset label {
+  margin: 0.75rem 0;
+  width: 30%;
+}
+form section fieldset select, form section fieldset input:not([type=checkbox]) {
+  height: 2rem;
+  font-size: 1rem;
+  padding-left: 0.5rem;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  width: 70%;
+}
+form section fieldset textarea {
+  height: 5rem;
+  font-size: 1rem;
+  padding-left: 0.5rem;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  width: 70%;
+  margin-bottom: 0.75rem;
+  resize: none;
+}
+
+.removeBtn {
+  width: 100%;
+  margin-top: 0.75rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+  background-color: #a30909;
+  color: #fff;
+}
+
+.addBtn {
+  width: 100%;
+  margin-top: 0.75rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+  background-color: #008c7d;
+  color: #fff;
+}
+
+.saveBtn {
+  width: 100%;
+  margin-top: 0.75rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+  background-color: #218c00;
+  color: #fff;
+}
+
+.editBtn {
+  width: 100%;
+  margin-top: 0.75rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+  background-color: #008c7d;
+  color: #fff;
+}
+
+.educational_experience,
+.job_experience {
+  margin-bottom: 1rem;
+}/*# sourceMappingURL=App.css.map */
