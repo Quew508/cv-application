@@ -66,7 +66,7 @@ export function JobExperience({ initialValues }: JobExperienceProps = {}) {
   }
 
   return (
-    <>
+    <section>
       <h2>Job Experience</h2>
       <DragDropContext onDragEnd={handleDragEnd}>
         <Droppable droppableId="job_experience">
@@ -144,6 +144,6 @@ export function JobExperience({ initialValues }: JobExperienceProps = {}) {
         </Droppable>
       </DragDropContext>
       <button type="button" className='addBtn' onClick={addJobExperience}>Add Job Experience</button>
-    </>
+    </section>
   )
 }

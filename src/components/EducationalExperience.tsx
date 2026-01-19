@@ -63,7 +63,7 @@ export function EducationalExperience({ initialValues }: EducationalExperiencePr
   }
 
   return (
-    <>
+    <section>
       <h2>Educational Experience</h2>
       <DragDropContext onDragEnd={handleDragEnd}>
         <Droppable droppableId='educational_experience'>
@@ -133,6 +133,6 @@ export function EducationalExperience({ initialValues }: EducationalExperiencePr
         </Droppable>
       </DragDropContext>
       <button type="button" className='addBtn' onClick={addEducation}>Add Education</button>
-    </>
+    </section>
   )
 }

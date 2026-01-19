@@ -82,7 +82,7 @@ export function GeneralInformation({ initialValues }: GeneralInfoProps = {}) {
   ];
 
   return (
-    <>
+    <section>
       <h2>General Information</h2>
       <fieldset className='general_information'>
         <Input input="input" type="text" label="First Name" name="fname" value={generalInfo.fname} onChange={e => setGeneralInfo(prev => ({ ...prev, fname: e.target.value }))} />
@@ -98,6 +98,6 @@ export function GeneralInformation({ initialValues }: GeneralInfoProps = {}) {
         <Input input="select" label="Country of Origin" name="country_of_origin" value={generalInfo.country_of_origin} onChange={e => setGeneralInfo(prev => ({ ...prev, country_of_origin: e.target.value }))} options={countries.map(country => ({ value: country, label: country }))} />
         <Input input="select" label="Country of Residence" name="country_of_residence" value={generalInfo.country_of_residence} onChange={e => setGeneralInfo(prev => ({ ...prev, country_of_residence: e.target.value }))} options={countries.map(country => ({ value: country, label: country }))} />
       </fieldset>
-    </>
+    </section>
   )
 }
